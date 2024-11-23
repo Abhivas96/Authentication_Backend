@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ec496762-ef8b-4e4b-ad85-a52a1d8b2d4f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../BasicAuth/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BasicAuth/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicAuth/BasicAuthApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicAuth/configs/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicAuth/controller/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicAuth/entity/LoginDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicAuth/entity/RegisterDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicAuth/entity/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicAuth/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicAuth/exceptions/AuthException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicAuth/exceptions/AuthExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicAuth/exceptions/ErrorResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicAuth/repositories/RoleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicAuth/repositories/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicAuth/security/CustomUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicAuth/services/Implementation/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicAuth/services/UserServiceInterface.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2pFQWe3QxIUX2YPyDqpFZfg2tA0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "JWT__Auth",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/abhishekkumar/Projects/Authentication_Backend/JWT_Auth"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec496762-ef8b-4e4b-ad85-a52a1d8b2d4f" name="Changes" comment="" />
+      <created>1732359376403</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732359376403</updated>
+    </task>
+    <servers />
+  </component>
+</project>
