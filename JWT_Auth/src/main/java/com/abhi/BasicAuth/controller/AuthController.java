@@ -1,5 +1,6 @@
 package com.abhi.BasicAuth.controller;
 
+import com.abhi.BasicAuth.entity.JwtAuthResponse;
 import com.abhi.BasicAuth.entity.LoginDTO;
 import com.abhi.BasicAuth.entity.RegisterDTO;
 import com.abhi.BasicAuth.services.Implementation.UserService;
@@ -26,7 +27,7 @@ public class AuthController {
     }
 
     @PostMapping("/user/login")
-    public ResponseEntity<String> login(@RequestBody LoginDTO loginDTO){
+    public ResponseEntity<JwtAuthResponse> login(@RequestBody LoginDTO loginDTO){
         return userService.login(loginDTO);
     }
 }
