@@ -1,12 +1,10 @@
 package com.abhi.BasicAuth.services.Implementation;
 
-import com.abhi.BasicAuth.entity.LoginDTO;
-import com.abhi.BasicAuth.entity.RegisterDTO;
-import com.abhi.BasicAuth.entity.Role;
-import com.abhi.BasicAuth.entity.User;
+import com.abhi.BasicAuth.entity.*;
 import com.abhi.BasicAuth.exceptions.AuthException;
 import com.abhi.BasicAuth.repositories.RoleRepository;
 import com.abhi.BasicAuth.repositories.UserRepository;
+import com.abhi.BasicAuth.security.JwtTokenProvider;
 import com.abhi.BasicAuth.services.UserServiceInterface;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -28,6 +26,7 @@ public class UserService implements UserServiceInterface {
     private RoleRepository roleRepository;
     private PasswordEncoder passwordEncoder;
     private AuthenticationManager authenticationManager;
+    private JwtTokenProvider jwtTokenProvider;
 
 
     @Override
@@ -65,12 +64,17 @@ public class UserService implements UserServiceInterface {
 
 
     @Override
-    public ResponseEntity<String> login(LoginDTO loginDTO) {
+    public ResponseEntity<JwtAuthResponse> login(LoginDTO loginDTO) {
         Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
                 loginDTO.getUsernameOrEmail(),
                 loginDTO.getPassword()
         ));
         SecurityContextHolder.getContext().setAuthentication(authentication);
-        return new ResponseEntity<>("Logged in successfully!", HttpStatus.OK);
+
+        String token = jwtTokenProvider.generateToken(authentication);
+
+        JwtAuthResponse jwtAuthResponse = new JwtAuthResponse();
+        jwtAuthResponse.setAccessToken(token);
+        return new ResponseEntity<>(jwtAuthResponse, HttpStatus.OK);
     }
 }
